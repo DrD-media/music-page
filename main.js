@@ -63,7 +63,7 @@ if (animItems.length > 0) {
 }
 
 /* Кнопка регулировки Аа*/
-let styleMod = localStorage.getItem('styleMod');
+/*let styleMod = localStorage.getItem('styleMod');
 const styleToggle2 = document.querySelector('.Tema2');
 
 const enableAStyle = () => {
@@ -86,10 +86,10 @@ styleToggle2.addEventListener('click', () => {
 
 if(styleMod === 'A'){
     enableAStyle();
-}
+}*/
 
 /* Кнопка включения отключения изображений*/ 
-let styleMod2 = localStorage.getItem('styleMod2');
+/*let styleMod2 = localStorage.getItem('styleMod2');
 const styleToggle3 = document.querySelector('.Tema3'); 
 
 const enableImgStyle = () => {
@@ -112,4 +112,4 @@ styleToggle3.addEventListener('click', () => {
 
 if(styleMod2 === 'img'){
     enableImgStyle();
-}
+}*/
