@@ -16,12 +16,12 @@ ol, ul {
 } 
 /* настройка кнопок*/
 :root {
-    --color-bg-1: #ffffff;
-    --color-body-1: #000000;
+    --color-bg-1: #161616;
+    --color-body-1: #ffffff;
     --color-body-logo: #34547A;
     --color-bg-2: #424242; /*#EEEFF1*/
-    --color-button-tema: #000000;
-    --color-message-form: #FFFFFF;
+    --color-button-tema: #FFFFFF;
+    --color-message-form: #000000;
     --size-text-blosk: 16px;
     --size-header-title: 48px;
     --size-text-title: 32px;
@@ -40,11 +40,11 @@ ol, ul {
     transition: all 0.3s;
 }
 .darkstyle {
-    --color-bg-1: #121212;
-    --color-body-1: #ffffff;
+    --color-bg-1: #ffffff;
+    --color-body-1: #000000;
     --color-body-logo: #99b9e8;
-    --color-bg-2: #262729;  /*#333*/ /*#262729*/ /*#262729*/
-    --color-button-tema: #FFFFFF; 
+    --color-bg-2: #424242;  /*#333*/ /*#262729*/ /*#262729*/
+    --color-button-tema: #000000; 
     --color-message-form: #3b3b3b;
     transition: all 0.3s;
 }
@@ -99,8 +99,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px; 
-    padding-right: 10px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
     background: var(--color-bg-2);
 }
 .header-logo {
