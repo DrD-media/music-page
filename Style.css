@@ -170,7 +170,6 @@ body {
     display: flex;
  /*   background-color: antiquewhite;*/
     border-radius: 20px;
-    min-width: 900px;
     max-width: 1140px;
     align-items: center;
     border: 2px solid #000;
