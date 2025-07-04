@@ -151,99 +151,130 @@ body {
     transform: scale(1.1);
     box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.192);
 }
-/**/
-/*.Tema2 {
-    border: none;
-    padding-left: 0px;
-    padding-right: 2px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.Tema-img2 {
-    height: 40px;
-    width: 40px;
-    border-radius: 27%; 
-    border: none;
-}
-.Tema-img2:hover{
-    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.192);
-    width: 45px;
-    height: 45px;
-    margin-left: -5px;
-}*/
-/**/
-/**/
-/*.Tema3 {
-    border: none;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.Tema-img3 {
-    height: 40px;
-    width: 40px;
-    border-radius: 27%; 
-    border: none;
-}
-.Tema-img3:hover{
-    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.192);
-    width: 45px;
-    height: 45px;
-    margin-left: -5px;
-}*/
-/**/
 
 /* .main*/
-.me {
+.main{
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.main-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 112px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 101px;
+    align-items: center;
 }
-
 .me-block{
-    max-width: 540px;
+    display: flex;
+ /*   background-color: antiquewhite;*/
+    border-radius: 20px;
+    min-width: 900px;
+    max-width: 1140px;
+    align-items: center;
+    border: 2px solid #000;
 }
 
-.me1 {
-    text-align: center;
-    font-size: var(--size-text-title);
-    line-height: auto;
-    font-weight: 500;
-    margin-bottom: 49px;
-    transform: translate(0px,100%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.me1._active  {
-    transform: translate(0px,0px);
-    opacity: 1;
-}
-
-.me2 {
+.icon-music-img{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
     overflow: hidden;
-    max-height: var(--max-height-1);
-    text-align: center;
-    font-size: var(--size-text-blosk);
-    line-height: 164.1%;
-    font-weight: 400;
-    color: #727272;
-    transform: translate(0px,100%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
+    border-radius: 20px;
 }
-.me2._active  {
-    transform: translate(0px,0px);
-    opacity: 1;
-    transition: all 0.8s ease 0.4s;
+.image-blur-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.icon-img-blur {
+    position: absolute;
+    width: 120%; /* Увеличиваем размер */
+    height: 120%;
+    object-fit: cover;
+  /*  filter: blur(15px) brightness(0.9);*/
+    z-index: 1;
+    opacity: 0.2; /* Прозрачность для эффекта */
+}
+.icon-img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    object-fit: contain; /* Рекомендую добавить */
+    z-index: 2; /* Над размытым фоном */
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Добавляет глубину */
+    border-radius: 20px;
 }
 
+.music_container{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.music_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.music_description {
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #727272;
+    max-width: 500px;
+}
+/*плеер*/
+.player_bar{
+    height: 4px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #727272;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.player_toggles{
+    display: flex;
+    color: #727272;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+.toggles_back, 
+.toggles_play_pause, 
+.toggles_next {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: inherit; /* Наследует от .player_toggles */
+}
+.toggles_play_pause {
+    width: 50px;
+    height: 50px;
+}
+.toggles_back:hover, 
+.toggles_play_pause:hover, 
+.toggles_next:hover {
+    transform: scale(1.1);
+    fill: #34547A;
+}
 /* .footer*/
-.footer-container {
+/*.footer-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -313,4 +344,4 @@ body {
     .footer-name {
         text-align: center;
     }
-}
+}*/
