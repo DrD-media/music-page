@@ -83,15 +83,41 @@
                 </div>
         </div>
     </header>
-    <main>
-        <div class="me" id="об авторе">
+    <main class="main">
+        <div class="main-container">
             <div class="me-block">
-                <h2 class="me1 _anim-items _anim-no-hide">Обо мне</h2>
-                <p class="me2 _anim-items" >Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <div class="icon-music-img">
+                    <div class="image-blur-wrapper">
+                        <img class="icon-img-blur" src="images/NoteBook.png" alt="Blur background">
+                        
+                        <img class="icon-img" 
+                        srcset="images/NoteBook.png,
+                                images/NoteBook@2x.png 2x"
+                        src="images/NoteBook.png" 
+                        alt="NoteBook">
+                    </div>
+                </div>
+                <div class="music_container">
+                    <h2 class="music_title">0225</h2>
+                    <p class="music_description" >Lore</p>
+                    <div class="player_bar"></div>
+                    <div class="player_toggles">
+                        <svg class="toggles_back" width="40" height="40" viewBox="0 0 24 24" fill="#727272">
+                            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                        </svg>
+                        <svg class="toggles_play_pause" width="50" height="50" viewBox="0 0 24 24" fill="#727272">
+                            <path class="play-icon" d="M8 5v14l11-7z"/>
+                            <path class="pause-icon" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" style="display:none"/>
+                        </svg>
+                        <svg class="toggles_next" width="40" height="40" viewBox="0 0 24 24" fill="#727272">
+                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
+    <!--<footer>
         <div class="footer-container" id="контакты">
             <div class="footer-container1">
                 <h3 class="footer-name _anim-items _anim-no-hide">Иванов Иван</h3>
@@ -105,7 +131,7 @@
                     alt="VK VK VK">
             </div>       
         </div>
-    </footer>
+    </footer>-->
     <script src="main.js"></script>
 </body>
 </html>
