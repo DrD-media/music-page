@@ -25,7 +25,7 @@ if(styleMode === 'dark'){
 }
 
 /* анимации при скролле*/ 
-const animItems = document.querySelectorAll('._anim-items');
+/*const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
@@ -60,7 +60,7 @@ if (animItems.length > 0) {
     setTimeout(() => {
         animOnScroll();
     }, 300);
-}
+}*/
 
 /* Кнопка регулировки Аа*/
 /*let styleMod = localStorage.getItem('styleMod');
