@@ -1,4 +1,4 @@
-/*сброс стилей перед началом - стартовая настройка.*/
+/*сброс стилей перед началом - стартовая настройка*/
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -170,6 +170,7 @@ body {
     display: flex;
  /*   background-color: antiquewhite;*/
     border-radius: 20px;
+    min-width: 750px;
     max-width: 1140px;
     align-items: center;
     border: 2px solid #000;
@@ -177,8 +178,8 @@ body {
 
 .icon-music-img{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,8 +207,8 @@ body {
 }
 .icon-img{
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     object-fit: contain; /* Рекомендую добавить */
     z-index: 2; /* Над размытым фоном */
     box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Добавляет глубину */
