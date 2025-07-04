@@ -1,4 +1,4 @@
-/* Кнопка смены темы*/ 
+/* Кнопка смены темы.*/ 
 let styleMode = localStorage.getItem('styleMode');
 const styleToggle = document.querySelector('.Tema');
 
